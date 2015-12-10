@@ -43,33 +43,33 @@
     <div class="col-md-4">
       <div class="row">
         <div class="col-md-6"><h3>disk write/read bytes/sec</h3></div>
-        <div class="col-md-6"><div id="disk_legend"></div></div>
+        <div class="col-md-6"><div id="master_disk_legend"></div></div>
       </div>
       
       <div id="chart_container">
-        <div class="y_axis" id="disk_y_axis"></div>
-        <div class="chart" id="disk_chart"></div>
-        <div class="chart" id="disk_preview"></div>
+        <div class="y_axis" id="master_disk_y_axis"></div>
+        <div class="chart" id="master_disk_chart"></div>
+        <div class="chart" id="master_disk_preview"></div>
       </div>
       
       <div class="row">
         <div class="col-md-6"><h3>net in/out bytes/sec</h3></div>
-        <div class="col-md-6"><div id="net_legend"></div></div>
+        <div class="col-md-6"><div id="master_net_legend"></div></div>
       </div>
       <div id="chart_container">
-        <div class="y_axis" id="net_y_axis"></div>
-        <div class="chart" id="net_chart"></div>
-        <div class="chart" id="net_preview"></div>
+        <div class="y_axis" id="master_net_y_axis"></div>
+        <div class="chart" id="master_net_chart"></div>
+        <div class="chart" id="master_net_preview"></div>
       </div>
 
       <div class="row">
         <div class="col-md-6"><h3>cpu</h3></div>
-        <div class="col-md-6"><div id="cpu_legend"></div></div>
+        <div class="col-md-6"><div id="master_cpu_legend"></div></div>
       </div>
       <div id="chart_container">
-        <div class="y_axis" id="cpu_y_axis"></div>
-        <div class="chart" id="cpu_chart"></div>
-        <div class="chart" id="cpu_preview"></div>
+        <div class="y_axis" id="master_cpu_y_axis"></div>
+        <div class="chart" id="master_cpu_chart"></div>
+        <div class="chart" id="master_cpu_preview"></div>
       </div>
     </div>
 
@@ -77,20 +77,81 @@
 
 
     <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-6"><h3>disk write/read bytes/sec</h3></div>
+        <div class="col-md-6"><div id="node1_disk_legend"></div></div>
+      </div>
+      
+      <div id="chart_container">
+        <div class="y_axis" id="node1_disk_y_axis"></div>
+        <div class="chart" id="node1_disk_chart"></div>
+        <div class="chart" id="node1_disk_preview"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6"><h3>net in/out bytes/sec</h3></div>
+        <div class="col-md-6"><div id="node1_net_legend"></div></div>
+      </div>
+      <div id="chart_container">
+        <div class="y_axis" id="node1_net_y_axis"></div>
+        <div class="chart" id="node1_net_chart"></div>
+        <div class="chart" id="node1_net_preview"></div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-6"><h3>cpu</h3></div>
+        <div class="col-md-6"><div id="node1_cpu_legend"></div></div>
+      </div>
+      <div id="chart_container">
+        <div class="y_axis" id="node1_cpu_y_axis"></div>
+        <div class="chart" id="node1_cpu_chart"></div>
+        <div class="chart" id="node1_cpu_preview"></div>
+      </div>
     </div>
 
 
 
 
     <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-6"><h3>disk write/read bytes/sec</h3></div>
+        <div class="col-md-6"><div id="node2_disk_legend"></div></div>
+      </div>
+      
+      <div id="chart_container">
+        <div class="y_axis" id="node2_disk_y_axis"></div>
+        <div class="chart" id="node2_disk_chart"></div>
+        <div class="chart" id="node2_disk_preview"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6"><h3>net in/out bytes/sec</h3></div>
+        <div class="col-md-6"><div id="node2_net_legend"></div></div>
+      </div>
+      <div id="chart_container">
+        <div class="y_axis" id="node2_net_y_axis"></div>
+        <div class="chart" id="node2_net_chart"></div>
+        <div class="chart" id="node2_net_preview"></div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-6"><h3>cpu</h3></div>
+        <div class="col-md-6"><div id="node2_cpu_legend"></div></div>
+      </div>
+      <div id="chart_container">
+        <div class="y_axis" id="node2_cpu_y_axis"></div>
+        <div class="chart" id="node2_cpu_chart"></div>
+        <div class="chart" id="node2_cpu_preview"></div>
+      </div>
     </div>
 
   </div>
 </div>
 
-<script src="/master.js"></script>
+<script src="/master.js?version=123"></script>
+<script src="/node1.js?version=123"></script>
+<script src="/node2.js?version=123"></script>
+
 
 <script>
 
