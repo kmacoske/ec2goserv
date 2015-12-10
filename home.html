@@ -1,0 +1,100 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+  <link type="text/css" rel="stylesheet" href="/assets/css/rickshaw.css">
+  <link type="text/css" rel="stylesheet" href="/assets/css/detail.css">
+  <link type="text/css" rel="stylesheet" href="/assets/css/legend.css">
+  <link type="text/css" rel="stylesheet" href="/assets/css/extensions.css">
+
+  <!-- Rickshaw needs both jquery versions for some reason -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>
+    jQuery.noConflict();
+  </script>
+  <script src="/assets/js/d3.v3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+  <script src="/assets/js/rickshaw.js"></script>
+  <script src="/assets/js/extensions.js"></script>
+
+  <!-- Bootstrap assets -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <style>
+    .rickshaw_graph .detail .x_label { display: none }
+    .chart { position: relative; left: 40px; }
+    .y_axis { position: absolute; top: 0; bottom: 0; width: 40px; }
+  </style>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+
+
+
+
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-6"><h3>disk write/read bytes/sec</h3></div>
+        <div class="col-md-6"><div id="disk_legend"></div></div>
+      </div>
+      
+      <div id="chart_container">
+        <div class="y_axis" id="disk_y_axis"></div>
+        <div class="chart" id="disk_chart"></div>
+        <div class="chart" id="disk_preview"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6"><h3>net in/out bytes/sec</h3></div>
+        <div class="col-md-6"><div id="net_legend"></div></div>
+      </div>
+      <div id="chart_container">
+        <div class="y_axis" id="net_y_axis"></div>
+        <div class="chart" id="net_chart"></div>
+        <div class="chart" id="net_preview"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6"><h3>cpu</h3></div>
+        <div class="col-md-6"><div id="cpu_legend"></div></div>
+      </div>
+      <div id="chart_container">
+        <div class="y_axis" id="cpu_y_axis"></div>
+        <div class="chart" id="cpu_chart"></div>
+        <div class="chart" id="cpu_preview"></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-4">
+
+    </div>
+
+
+
+
+    <div class="col-md-4">
+
+    </div>
+
+  </div>
+</div>
+
+<script src="/master.js"></script>
+
+<script>
+
+ 
+
+</script>
+</body>
