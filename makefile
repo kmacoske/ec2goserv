@@ -2,7 +2,8 @@ all: build package
 
 build:
 	go get -v
-	go build -v
+	go build -v server.go
+	go build -v client.go
 
 package: project
 	mkdir -p package/bin package/data
